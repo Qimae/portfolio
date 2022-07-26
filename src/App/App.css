@@ -1,0 +1,25 @@
+:root {
+  --primary-color: rgb(34, 113, 233);
+  --primary-color-white: white;
+}
+
+.App {
+  background-color: var(--primary-color-white);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-image: url('../assets/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+
+}

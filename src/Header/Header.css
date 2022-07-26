@@ -1,0 +1,96 @@
+:root {
+    --primary-color: rgb(34, 113, 233);
+    --primary-color-white: white;
+    --color-red: red;
+    --color-blue: blue;
+}
+
+
+nav {
+    overflow: hidden;
+    background-color: inherit;
+    text-align: right;
+    width: 100%;
+}
+
+nav .topnav span {
+    padding: 5px;
+    float: left;
+    color: var(--primary-color-white);
+    font-size: xx-large;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    font-family: 'Euphoria Script', cursive;
+}
+
+.topnav a {
+    display: inline-block;
+    color: var(--primary-color-white);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: right;
+    letter-spacing: .1rem;
+
+}
+
+.topnav a:hover {
+    color: var(--color-red);
+}
+
+.topnav a.active {
+    color: greenyellow;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+nav label,
+#hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .topnav a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid var(--primary-color-white);
+    }
+
+    nav label {
+        display: block;
+        color: var(--primary-color-white);
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        text-align: right;
+    }
+
+    nav label span {
+        padding: 5px;
+        float: left;
+        color: var(--primary-color-white);
+        font-size: xx-large;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        font-family: 'Euphoria Script', cursive;
+    }
+
+    nav .topnav span {
+        display: none;
+    }
+
+
+    .topnav a {
+        display: none;
+    }
+
+    nav input:checked~.topnav a {
+        display: inline-block;
+        text-align: center;
+
+    }
+}
