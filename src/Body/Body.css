@@ -1,0 +1,103 @@
+:root {
+    --primary-color: blue;
+    --color-white: white;
+    --text-color: rgb(32, 33, 68);
+}
+
+.body {
+    background-color: var(--primary-color);
+    min-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.intro {
+    color: var(--color-white);
+    padding: 100px;
+    text-align: center;
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.intro p {
+    font-size: x-large;
+}
+
+.intro h2 {
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 767px) {
+    .intro {
+        text-align: center;
+        width: 100%;
+        display: inline;
+    }
+
+    .intro p {
+        padding: 10px;
+    }
+
+    .intro h2 {
+        text-align: center;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-bottom: 10px;
+    
+    
+}
+
+.row {
+    margin: 0 -5px;
+    position: relative;
+    top: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
+    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px 0;
+    text-align: center;
+    background-color: var(--color-white);
+    min-height: 50vh;
+    border-radius: 5px;   
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 var(--color-white);
+}
+
+.card img {
+    height: 50px;
+    width: 50px;
+}
+
+.card h3, .card p {
+    color: var(--text-color);
+}

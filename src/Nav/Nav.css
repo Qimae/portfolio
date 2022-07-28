@@ -1,0 +1,102 @@
+:root {
+    --primary-color: rgb(34, 113, 233);
+    --primary-color-white: white;
+    --color-red: red;
+    --color-blue: blue;
+    --text-color: rgb(32, 33, 68);
+
+}
+
+
+nav {
+    overflow: hidden;
+    text-align: right;
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav .topnav span {
+    padding: 40px;
+    float: left;
+    color: var(--color-blue);
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    font-family: 'Euphoria Script', cursive;
+    margin-left: 90px;
+}
+
+.topnav a {
+    display: inline-block;
+    color: var(--text-color);
+    padding: 50px 0px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: right;
+    letter-spacing: .1rem;
+    margin-right: 100px;
+
+}
+
+.topnav a:hover {
+    color: var(--color-blue);
+}
+
+.topnav a.active {
+    color: greenyellow;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+nav label,
+#hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .topnav a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    nav label {
+        display: block;
+        color: black;
+        padding: 40px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        text-align: right;
+    }
+
+    nav label span {
+        padding: 0px;
+        float: left;
+        color: var(--color-blue);
+        font-size: 45px;
+        font-weight: 700;
+        letter-spacing: .1rem;
+        font-family: 'Euphoria Script', cursive;
+    }
+
+    nav .topnav span {
+        display: none;
+    }
+
+
+    .topnav a {
+        display: none;
+    }
+
+    nav input:checked~.topnav a {
+        display: inline-block;
+        text-align: center;
+
+    }
+}

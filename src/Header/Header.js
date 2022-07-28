@@ -1,22 +1,18 @@
 import React from 'react';
 import './Header.css';
+import Me from '../assets/me.jpeg';
 
 function Header() {
-    return (
-        <nav>
-            <label for="hamburger"><span>K</span>&#9776;</label>
-            <input type="checkbox" id="hamburger" />
-            <div className='topnav'>
-                <span>K</span>
-                <a href="#home" >Home</a>
-                <a href="#home">Projects</a>
-                <a href="#about">Hire Me</a>
-                <a href="#contact">Resume</a>
-            </div>
+  return (
+    <div className='header'>
+      <div className='text'>
+        <h1>Designer & Front-end Developer</h1>
+        <p>I design and code beautiful and simple things.</p>
+        <img src={Me} alt='me'></img>
+      </div>
+    </div>
 
-        </nav>
-
-    )
+  );
 }
 
 
