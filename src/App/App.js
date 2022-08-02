@@ -6,7 +6,7 @@ import Body from '../Body/Body';
 function App() {
   return (
     <div className="App">
-      <Nav />
+      <Nav /> 
       <Header />
       <Body />
 
