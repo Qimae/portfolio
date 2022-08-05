@@ -2,10 +2,13 @@ import React from 'react';
 import './Body.css';
 import Design from '../assets/layers.png';
 import Web from '../assets/code.png';
+import Jogolo from '../assets/jogolo.png';
+import Skillz from '../assets/skillz.png';
 
 function Body() {
     return (
         <div className='body'>
+            {/* intro header */}
             <div className='intro'>
                 <h2>Hi, I'm Kimae. Nice to meet you.</h2>
                 <p>Starting from the start when I began my diploma,
@@ -44,29 +47,40 @@ function Body() {
                         <p>Chrome Dev Tools</p>
                     </div>
                 </div>
-
             </div>
-            <div className='portfolio'>
+            {/* portfolio */}
+            <div className='portfolio' id='projects'>
                 <h2>My Recent Work</h2>
                 <p>Here are a few past design projects I've worked on. <a href='mailto:kimaekahindi@yahoo.com'>Email me</a> for more.</p>
                 <div class="row1">
                     <div class="column1">
                         <div class="card1">
-                            <h3>Card 1</h3>
-                            <p>Some text</p>
-                            <p>Some text</p>
+                            <div class="container">
+                                <img src={Jogolo} alt="Avatar" class="image"></img>
+                                    <div class="overlay">
+                                        <div class="text1">Real Estate investors, building Kenya step by step.
+                                        <button class="button">View Website</button>
+                                        </div>
+                                    </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="column1">
                         <div class="card1">
-                            <h3>Card 2</h3>
-                            <p>Some text</p>
-                            <p>Some text</p>
+                            <div class="container">
+                                <img src={Skillz} alt="Avatar" class="image"></img>
+                                    <div class="overlay">
+                                        <div class="text1">E-learning platform, serving the world to create future programmers.
+                                        <button class="button">View Website</button>
+                                        </div>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            {/* footer */}            
             <div className='start'>
                 <div className='row2'>
                     <h2>Start a Project</h2>
@@ -84,9 +98,9 @@ function Body() {
                             <h2>Start a Project</h2>
                             <p>Keen on cooperating? We ought to line up an opportunity to talk. I'll purchase the espresso.</p>
                             <button className='button'>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-index-thumb" viewBox="0 0 16 16">
-                            <path d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 0 0 1 0V6.435l.106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 1 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.118a.5.5 0 0 1-.447-.276l-1.232-2.465-2.512-4.185a.517.517 0 0 1 .809-.631l2.41 2.41A.5.5 0 0 0 6 9.5V1.75A.75.75 0 0 1 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v6.543L3.443 6.736A1.517 1.517 0 0 0 1.07 8.588l2.491 4.153 1.215 2.43A1.5 1.5 0 0 0 6.118 16h6.302a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z" />
-                        </svg> Let's do this</button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-index-thumb" viewBox="0 0 16 16">
+                                    <path d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 0 0 1 0V6.435l.106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 1 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.118a.5.5 0 0 1-.447-.276l-1.232-2.465-2.512-4.185a.517.517 0 0 1 .809-.631l2.41 2.41A.5.5 0 0 0 6 9.5V1.75A.75.75 0 0 1 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v6.543L3.443 6.736A1.517 1.517 0 0 0 1.07 8.588l2.491 4.153 1.215 2.43A1.5 1.5 0 0 0 6.118 16h6.302a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z" />
+                                </svg> Let's do this</button>
                         </div>
                     </div>
                 </div>
