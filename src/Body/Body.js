@@ -4,6 +4,7 @@ import Design from '../assets/layers.png';
 import Web from '../assets/code.png';
 import Jogolo from '../assets/jogolo.png';
 import Skillz from '../assets/skillz.png';
+import Contact from '../Contact/Contact';
 
 function Body() {
     return (
@@ -80,6 +81,8 @@ function Body() {
                     </div>
                 </div>
             </div>
+            <Contact />
+
             {/* footer */}            
             <div className='start'>
                 <div className='row2'>
@@ -105,6 +108,7 @@ function Body() {
                     </div>
                 </div>
             </div>
+
             <div className='footer'>
                 <p>K</p>
                 <h3>Living, learning, and stepping up each day in turn.</h3>

@@ -5,12 +5,11 @@ import Body from '../Body/Body';
 
 function App() {
   return (
-    <div className="App" id='app'>
-      <Nav /> 
-      <Header />
-      <Body />
-
-    </div>
+      <div className="App" id='app'>
+        <Nav />
+        <Header />
+        <Body />
+      </div>
   );
 }
 
