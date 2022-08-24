@@ -3,8 +3,7 @@ import './Contact.css';
 
 function Contact() {
     return (
-        <div class="fcf-body">
-
+        <div class="fcf-body" id='contact'>
             <div id="fcf-form">
                 <h2 class="fcf-h3">Contact Me</h2>
 
